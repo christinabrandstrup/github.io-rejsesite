@@ -1,0 +1,442 @@
+/*CSS document*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #747939;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+p {
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+    padding: 0% 0% 3% 0%;
+}
+
+h1,
+h2,
+h3 {
+    padding-top: 5%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.inside {
+    list-style-position: inside;
+}
+
+/******************HEADER***************/
+
+#vietnam {
+    background: url("../images/vietnam.jpg");
+}
+#home {
+    background: url("../images/dreng-flasker.jpg");
+}
+
+#home, #vietnam {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+hr {
+    height: 1px;
+    background: #ffffff;
+    border: 0;
+    margin: 0 auto 40px auto;
+}
+
+#vietnam h1, #home h1 {
+    text-align: center;
+    padding-top: 45%;
+    color: white;
+
+}
+
+
+
+
+
+/******** NAVIGATION *******/
+
+header {
+    display: flex;
+    background: white;
+    width: 100%;
+    padding: 0 20px;
+    padding: 0 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+.logo1 {
+    display: flex;
+    width: 80px;
+    position: relative;
+    margin: 4% 0% 8% 0%;
+}
+
+#logo a,
+#main-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: .5em;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    align-items: center;
+}
+
+#main-nav a {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#main-nav a:hover {
+    color: darkgray;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: none;
+}
+
+
+
+
+
+
+/*######################## FORSIDE  ##########################*/
+
+
+
+
+#forside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*######################## VIETNAM  ##########################*/
+
+.v {
+    width: 100%;
+    padding: 8%;
+}
+
+
+
+#tekst, #ja {
+    background-color: #F5F6F1;
+}
+
+#jep, #ja {
+    padding: 8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************** FOOTER ****************************/
+
+footer {
+    background-color: #747939;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+color: white;
+}
+
+
+
+footer h3 {
+    margin-bottom: 2%;
+    font-weight: 700;
+}
+
+footer div,
+adress {
+    padding: 5% 5%;
+}
+
+#medlem {
+    padding-top: 10%;
+
+}
+
+
+
+/*----------------- NAVIGATION -------------------------------*/
+@media only screen and (max-width: 900px) {
+
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+/****************** MOBILE ********************************/
+@media only screen and (max-width: 480px) {}
+
+/******************* TABLET *******************************/
+@media only screen and (min-width: 481px) {
+
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 18px;
+        padding-bottom: 1%;
+        font-weight: 400;
+    }
+
+    p,
+        {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+    #forside {
+        flex-direction: column;
+
+    }
+
+    #forside div {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #forside .a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forside div img {
+        width: 40%;
+        height: 40%;
+        margin-left: 2%;
+    }
+
+    #forside .b{
+        padding: 0% 2%;
+    }
+ #forside .b div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #forside .b img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    
+    #vietnam h1, #home h1 {
+    padding-top: 30%;
+}
+
+    
+    #tekst {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    
+  
+
+
+
+
+    /********************* FOOTER ****************************/
+
+
+    footer {
+
+        display: grid;
+        grid-template-columns: 25% 25% 50%;
+    }
+
+    #medlem {
+        padding-top: 20px;
+    }
+
+}
+
+/************************ LAPTOP *************************/
+
+@media only screen and (min-width: 850px) {
+
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+        padding-bottom: 1%;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+
+    .logo1 {
+        width: 110px;
+        margin: 4% 0% 8% 0%;
+    }
+
+    #main-nav a {
+        font-weight: 400;
+        color: #4f4437;
+    }
+
+    #forside .b div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #forside .b img {
+        width: 40%;
+        height: auto;
+    }
+
+  #vietnam h1, #home h1 {
+    padding-top: 20%;
+}
+
+#tekst {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+
+}
